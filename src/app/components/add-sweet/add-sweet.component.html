@@ -1,1 +1,13 @@
-<p>add-sweet works!</p>
+<h2>Add New Sweet</h2>
+<form (ngSubmit)="addSweet()" #sweetForm="ngForm">
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="newSweet.name" name="name" required /><br>
+
+  <label>Category:</label>
+  <input type="text" [(ngModel)]="newSweet.category" name="category" required /><br>
+
+  <label>Price:</label>
+  <input type="number" [(ngModel)]="newSweet.price" name="price" required /><br>
+
+  <button type="submit">Add Sweet</button>
+</form>

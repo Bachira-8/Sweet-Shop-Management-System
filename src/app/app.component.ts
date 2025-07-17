@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { AddSweetComponent } from './components/add-sweet/add-sweet.component';
+import { CommonModule } from '@angular/common';
+import { SweetListComponent } from "./components/sweet-list/sweet-list.component";
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, AddSweetComponent, SweetListComponent]
 })
 export class AppComponent {
-  title = 'Sweet_Shop_Management_System';
+  showForm = false;
+
+  sweets = [
+    { name: 'Kaju Katli', category: 'Dry Fruit', price: 50 },
+    { name: 'Rasgulla', category: 'Syrup', price: 25 }
+  ];
 }

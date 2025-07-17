@@ -5,7 +5,7 @@ import { AddSweetComponent } from './components/add-sweet/add-sweet.component';
 
 export const routes: Routes = [
     { path: '', component: SweetListComponent },
-  { path: 'add', component: AddSweetComponent }
+  { path: './add', component: AddSweetComponent },
 ];
 
 @NgModule({
