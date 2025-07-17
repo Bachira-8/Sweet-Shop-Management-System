@@ -1,1 +1,21 @@
-<p>sweets works!</p>
+<div class="container">
+  <h2>Sweet List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sweet of sweets">
+        <td>{{ sweet.id }}</td>
+        <td>{{ sweet.name }}</td>
+        <td>{{ sweet.category }}</td>
+        <td>{{ sweet.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
