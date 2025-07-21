@@ -16,19 +16,20 @@ export class AddSweetComponent {
     id: 0,
     name: '',
     category: '',
-    price: 0
+    price: 0,
+    quantity:0
   };
 
   constructor(private sweetService: SweetService) {}
 
   addSweet(): void {
-    if (!this.newSweet.name || !this.newSweet.category || !this.newSweet.price) {
+    if (!this.newSweet.name || !this.newSweet.category || !this.newSweet.price || !this.newSweet) {
       alert("Please fill in all fields.");
       return;
     }
 
     this.sweetService.addSweet(this.newSweet);
     alert('Sweet added successfully!');
-    this.newSweet = { id: 0, name: '', category: '', price: 0 }; // reset form
+    this.newSweet = { id: 0, name: '', category: '', price: 0, quantity:0}; // reset form
   }
 }

@@ -1,0 +1,28 @@
+:root{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    display: flex;
+    background-color: rgb(130, 93, 24);
+    color: azure;
+    text-align: center;
+    justify-content:space-between;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Kanit;
+    border-radius: 10px;
+
+}
+.title{
+    font-size: 30px;
+    font-weight: 450;
+}
+
+
+.functions{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 250px;
+}

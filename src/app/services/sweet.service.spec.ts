@@ -26,7 +26,8 @@ describe('SweetService', () => {
       id: 3,
       name: 'Gulab Jamun',
       category: 'Milk',
-      price: 35
+      price: 35,
+      quantity: 150,
     }
 
     service.addSweet(newSweet);

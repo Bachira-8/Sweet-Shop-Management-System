@@ -1,5 +1,10 @@
+<div class="navbar">
+  <app-navbar></app-navbar>
+</div>
+
+
 <div class="container">
-  <h1>Sweet Shop Management</h1>
+  <h1>Sweet Shop Management System</h1>
 
   <button class="toggle-button" (click)="showForm = !showForm">
     {{ showForm ? 'Hide Add Sweet Form' : '➕ Add New Sweet' }}
@@ -7,25 +12,5 @@
 
   <app-add-sweet *ngIf="showForm"></app-add-sweet>
 
-  <app-sweetlist />
-
-  <!-- <h2>Sweet List</h2>
-  <table class="sweet-table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Category</th>
-        <th>Price (₹)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let sweet of sweets; let i = index">
-        <td>{{ i + 1 }}</td>
-        <td>{{ sweet.name }}</td>
-        <td>{{ sweet.category }}</td>
-        <td>{{ sweet.price }}</td>
-      </tr>
-    </tbody>
-  </table>-->
+  <app-sweetlist></app-sweetlist>
 </div> 
